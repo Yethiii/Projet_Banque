@@ -1,12 +1,12 @@
 ﻿using Projet_Banque;
 
-public class Account
+abstract public class Account
 {
     public Person Owner { get; set; }
     public double Balance {get; private set; } //Solde 
     public string Number{get;set;} //N°Compte
     
-    public double GetBalance()
+     public double GetBalance()
     {
         return Balance; 
     }
