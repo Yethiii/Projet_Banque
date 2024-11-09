@@ -14,3 +14,4 @@ myAccount.Deposit(20);
 Console.WriteLine(myAccount.Balance);
 Console.WriteLine(myAccount2.Balance);
 myBank.TotalSolde(myClient);
+myAccount.ApplyInterest();

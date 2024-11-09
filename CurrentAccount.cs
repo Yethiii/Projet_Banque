@@ -10,4 +10,18 @@ public class CurrentAccount : Account //CompteCourant
         CreditLine = credit;
     }
     
+    protected override double CalculInterets()
+    {
+        double tauxInterets = 0.030;
+        double tauxInteretsNeg = 0.0975;
+
+        if (Balance > 0)
+        {
+            return Balance * tauxInterets;
+        }
+        else
+        {
+            return Balance * tauxInteretsNeg;
+        }
+    }
 }

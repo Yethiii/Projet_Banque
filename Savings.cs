@@ -9,5 +9,10 @@ public class Savings : Account
     {
         DateLastWithDaw = date;
     }
-   
+
+    protected override double CalculInterets()
+    {
+        double tauxInterets = 0.045;
+        return Balance + tauxInterets;
+    }
 }
