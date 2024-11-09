@@ -2,7 +2,7 @@
 
 public class Bank
 {
-    private readonly Dictionary<string, CurrentAccount> Accounts = [];
+    private readonly Dictionary<string, Account> Accounts = [];
     private string Name { get; set; }
 
     public Bank(string bankName)
@@ -11,7 +11,7 @@ public class Bank
         Console.WriteLine(Name);
     }
 
-    public void AddAccount(CurrentAccount account)
+    public void AddAccount(Account account)
     {
         if (Accounts.ContainsKey(account.Number))
         {
@@ -24,7 +24,7 @@ public class Bank
     }
 
 
-    public void DeleteAccount(CurrentAccount account)
+    public void DeleteAccount(Account account)
     {
         if (Accounts.ContainsKey(account.Number))
         {
@@ -45,6 +45,6 @@ public class Bank
                 solde += element.Value.Balance;
             } ;
         }
-        Console.WriteLine($"Le total des comptes de {client.FirstName} {client.LastName} : {solde}€");
+        Console.WriteLine($"Le total des comptes de {client.FirstName} {client.LastName} : {solde} euros");
     }
 }

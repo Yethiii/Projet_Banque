@@ -1,0 +1,15 @@
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\bin\Debug\net8.0\Projet_Banque.exe
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\bin\Debug\net8.0\Projet_Banque.deps.json
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\bin\Debug\net8.0\Projet_Banque.runtimeconfig.json
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\bin\Debug\net8.0\Projet_Banque.dll
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\bin\Debug\net8.0\Projet_Banque.pdb
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\Projet_Banque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\Projet_Banque.AssemblyInfoInputs.cache
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\Projet_Banque.AssemblyInfo.cs
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\Projet_Banque.csproj.CoreCompileInputs.cache
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\Projet_Banque.sourcelink.json
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\Projet_Banque.dll
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\refint\Projet_Banque.dll
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\Projet_Banque.pdb
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\Projet_Banque.genruntimeconfig.cache
+C:\Users\laeti\Documents\PPO\RiderProject\Projet_Banque\Projet_Banque\obj\Debug\net8.0\ref\Projet_Banque.dll
