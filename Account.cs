@@ -1,10 +1,10 @@
 ﻿using Projet_Banque;
 
-abstract public class Account : IAccount, IBankAccount
+abstract public class Account : IBankAccount
 {
-    public Person Owner { get; set; }
+    public Person Owner { get; private set; }
     public double Balance { get; private set; } //Solde 
-    public string Number { get; set; } //N°Compte
+    public string Number { get; private set; } //N°Compte
 
     public double GetBalance()
     {
@@ -15,6 +15,12 @@ abstract public class Account : IAccount, IBankAccount
     {
         Number = nb;
         Balance = solde;
+        Owner = owner;
+    }
+    
+    public Account(string nb, Person owner)
+    {
+        Number = nb;
         Owner = owner;
     }
 

@@ -1,8 +1,8 @@
 ﻿using Projet_Banque;
 
-public class Savings : Account
+ class Savings : Account
 {
-    public DateTime DateLastWithDaw {get; set;}
+    public DateTime DateLastWithDaw {get; private set;}
     
     public Savings(string nb, double solde, DateTime date, Person owner)
         : base(nb, solde, owner)

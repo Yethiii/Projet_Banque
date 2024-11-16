@@ -1,6 +1,6 @@
 ﻿namespace Projet_Banque;
 
-public class CurrentAccount : Account //CompteCourant 
+ class CurrentAccount : Account //CompteCourant 
 {
     public double CreditLine{get;set;}  
 

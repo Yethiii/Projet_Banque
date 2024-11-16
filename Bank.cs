@@ -1,6 +1,6 @@
 ﻿using Projet_Banque;
 
-public class Bank
+ class Bank
 {
     private readonly Dictionary<string, Account> Accounts = [];
     private string Name { get; set; }
