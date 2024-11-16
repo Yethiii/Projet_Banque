@@ -1,6 +1,6 @@
 ﻿using Projet_Banque;
 
-abstract public class Account
+abstract public class Account : IAccount, IBankAccount
 {
     public Person Owner { get; set; }
     public double Balance { get; private set; } //Solde 
@@ -42,5 +42,21 @@ abstract public class Account
     }
 }
 
+public interface IAccount
+
+{
+   public double Balance { get;}
+    public void Withdraw(double amount);
+    public void Deposit(double amount);
+}
+
+public interface IBankAccount : IAccount
+{
+    public Person Owner { get;}
+    public string Number { get;}
+    public void ApplyInterest();
+    
+    
+}
 
 
