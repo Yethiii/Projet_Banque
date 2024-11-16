@@ -5,7 +5,7 @@
     public DateTime DateLastWithDaw {get; private set;}
     
     public Savings(string nb, double solde, DateTime date, Person owner)
-        : base(nb, solde, owner)
+        : base(nb, solde, owner)s
     {
         DateLastWithDaw = date;
     }

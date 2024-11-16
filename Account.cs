@@ -34,6 +34,11 @@ abstract public class Account : IBankAccount
         
         Balance -= amount;
         Console.WriteLine($"Voilà le solde après le retrait : {Balance}€");
+
+        if (Balance < 0)
+        {
+            NegativeBalanceEvent?.Invoke(this);
+        }
     }
 
     
@@ -56,7 +61,9 @@ abstract public class Account : IBankAccount
         Balance += interets;
         Console.WriteLine($"'Les intérêts de {interets} ont été apppliqués. Voilà le solde : {Balance} euros ");
     }
-}
+    
+    public event NegativeBalanceDelegate NegativeBalanceEvent;
+    
 
 public interface IAccount
 
@@ -82,5 +89,7 @@ public class InsufficientBalanceException : Exception
         Console.WriteLine(message);
     }
 }
+
+public delegate void NegativeBalanceDelegate(object Account);
 
 
