@@ -1,8 +1,17 @@
 ﻿namespace Projet_Banque;
 
  class CurrentAccount : Account //CompteCourant 
-{
-    public double CreditLine{get;set;}  
+ { 
+    private double _creditLine = 1000;
+    public double CreditLine
+    {
+        get => _creditLine;
+        set
+        {
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(CreditLine);
+            _creditLine = value;
+        }
+    }  
 
     public CurrentAccount(string nb, double solde, double credit, Person owner)
         : base(nb, solde, owner)

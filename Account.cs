@@ -27,16 +27,26 @@ abstract public class Account : IBankAccount
 
     public void Withdraw(double amount) //Retrait
     {
+        if (amount > Balance)
+        {
+            throw new InsufficientBalanceException("Solde insuffisant !");
+        }
+        
         Balance -= amount;
         Console.WriteLine($"Voilà le solde après le retrait : {Balance}€");
     }
 
+    
     public void Deposit(double amount) //Dépot 
-    {
-        Balance += amount;
-        Console.WriteLine($"Voilà le solde après le dépot : {Balance}€");
+        {
+            if (amount <= 0)
+            {
+                throw new ArgumentOutOfRangeException("Le montant ne peut pas être négatif !");
+            }
 
-    }
+            Balance += amount;
+                Console.WriteLine($"Voilà le solde après le dépot : {Balance}€");
+        }
 
     abstract protected double CalculInterets();
 
@@ -63,6 +73,14 @@ public interface IBankAccount : IAccount
     public void ApplyInterest();
     
     
+}
+
+public class InsufficientBalanceException : Exception
+{
+    public InsufficientBalanceException(string message) : base(message)
+    {
+        Console.WriteLine(message);
+    }
 }
 
 
